@@ -1,0 +1,1230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Academic homepage of Anqi Liu, Postdoctoral Researcher in the Hydro-climatology Research Lab at POSTECH.">
+  <meta name="author" content="Anqi Liu">
+  <meta name="theme-color" content="#0f6e6b">
+  <meta property="og:title" content="Anqi Liu | Academic Homepage">
+  <meta property="og:description" content="Postdoctoral Researcher in the Hydro-climatology Research Lab at POSTECH.">
+  <meta property="og:type" content="profile">
+  <title>Anqi Liu | Academic Homepage</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230f6e6b'/%3E%3Ctext x='16' y='21' text-anchor='middle' font-family='Georgia,serif' font-size='12' fill='%23f6f3ec'%3EAL%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500..700&family=Source+Sans+3:ital,wght@0,400..700;1,400..600&display=swap" rel="stylesheet">
+  <script>
+    document.documentElement.classList.add("js");
+    function photoReady(img) { img.classList.add("is-ready"); }
+    function photoFailed(img) {
+      var avatar = img.parentElement;
+      img.remove();
+      if (!avatar) return;
+      avatar.classList.add("is-fallback");
+      avatar.setAttribute("role", "img");
+      avatar.setAttribute("aria-label", "Portrait of Anqi Liu");
+      var initials = avatar.querySelector(".initials");
+      if (initials) initials.removeAttribute("aria-hidden");
+    }
+  </script>
+  <style>
+    :root {
+      --bg: #f3f6f5;
+      --ink: #12282d;
+      --text: #2c4146;
+      --muted: #4e6469;
+      --teal: #0f6e6b;
+      --teal-deep: #0b5552;
+      --line: #d5e3e0;
+      --mist: #e5f3f1;
+      --card: #ffffff;
+      --cream: #f6f3ec;
+      --hero-text: #e7f2f0;
+      --shadow: 0 10px 28px rgba(16, 46, 48, 0.05);
+      --shadow-hover: 0 16px 36px rgba(16, 46, 48, 0.09);
+      --max: 1080px;
+      --nav-h: 4.4rem;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; scroll-padding-top: 5.2rem; }
+
+    body {
+      margin: 0;
+      color: var(--text);
+      background:
+        radial-gradient(980px 420px at 110% -80px, rgba(15, 110, 107, 0.09), transparent 58%),
+        radial-gradient(720px 360px at -12% 108%, rgba(15, 110, 107, 0.07), transparent 52%),
+        var(--bg);
+      font-family: "Source Sans 3", "Segoe UI", sans-serif;
+      font-size: 1.0625rem;
+      line-height: 1.65;
+      font-weight: 430;
+    }
+
+    ::selection { background: #b7e4df; color: #0c2c2e; }
+
+    img { max-width: 100%; }
+
+    a {
+      color: var(--teal-deep);
+      font-weight: 620;
+      text-decoration-line: underline;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 0.18em;
+      text-decoration-color: rgba(11, 85, 82, 0.35);
+    }
+
+    a:hover { text-decoration-color: currentColor; }
+
+    :focus-visible {
+      outline: 2px solid var(--teal);
+      outline-offset: 3px;
+    }
+
+    .skip {
+      position: absolute;
+      left: 1rem;
+      top: -3rem;
+      z-index: 200;
+      padding: 0.45rem 0.7rem;
+      border-radius: 8px;
+      background: var(--ink);
+      color: white;
+      text-decoration: none;
+    }
+
+    .skip:focus { top: 0.6rem; }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    .wrap {
+      width: min(var(--max), calc(100% - 2.75rem));
+      margin-inline: auto;
+    }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(243, 246, 245, 0.86);
+      backdrop-filter: blur(16px) saturate(1.3);
+      border-bottom: 1px solid rgba(15, 110, 107, 0.12);
+      box-shadow: inset 0 3px 0 var(--teal);
+    }
+
+    .topbar-inner {
+      width: min(var(--max), calc(100% - 2.75rem));
+      min-height: var(--nav-h);
+      margin-inline: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.25rem;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.7rem;
+      color: var(--ink);
+      text-decoration: none;
+      font-weight: 680;
+      letter-spacing: -0.02em;
+    }
+
+    .brand:hover { text-decoration: none; color: var(--teal-deep); }
+
+    .brand-name { font-size: 1.02rem; }
+
+    .monogram {
+      width: 2.15rem;
+      height: 2.15rem;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: linear-gradient(160deg, #17867f, #0b5552);
+      color: var(--cream);
+      font-family: Fraunces, Georgia, serif;
+      font-size: 0.92rem;
+      font-weight: 560;
+      letter-spacing: 0.02em;
+    }
+
+    .nav-toggle {
+      display: none;
+      width: 2.75rem;
+      height: 2.75rem;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: #fff;
+      color: var(--ink);
+      cursor: pointer;
+    }
+
+    .burger,
+    .burger::before,
+    .burger::after {
+      display: block;
+      width: 16px;
+      height: 1.5px;
+      border-radius: 2px;
+      background: currentColor;
+      position: relative;
+      transition: transform 0.2s ease, top 0.2s ease, background 0.2s ease;
+    }
+
+    .burger::before,
+    .burger::after {
+      content: "";
+      position: absolute;
+      left: 0;
+    }
+
+    .burger::before { top: -5px; }
+    .burger::after { top: 5px; }
+
+    .topbar.menu-open .burger { background: transparent; }
+    .topbar.menu-open .burger::before { top: 0; transform: rotate(45deg); }
+    .topbar.menu-open .burger::after { top: 0; transform: rotate(-45deg); }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 0.35rem 1.35rem;
+    }
+
+    .nav-links a {
+      position: relative;
+      color: var(--muted);
+      font-size: 0.98rem;
+      font-weight: 620;
+      text-decoration: none;
+      padding: 0.35rem 0.05rem;
+      white-space: nowrap;
+    }
+
+    .nav-links a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -0.15rem;
+      height: 2px;
+      border-radius: 2px;
+      background: var(--teal);
+      transform: scaleX(0);
+      transform-origin: left center;
+      transition: transform 0.22s ease;
+    }
+
+    .nav-links a:hover { color: var(--teal-deep); text-decoration: none; }
+    .nav-links a:hover::after,
+    .nav-links a.active::after { transform: scaleX(1); }
+    .nav-links a.active { color: var(--teal-deep); }
+
+    .hero {
+      position: relative;
+      color: var(--hero-text);
+      background:
+        radial-gradient(820px 380px at 92% 0%, rgba(86, 196, 186, 0.28), transparent 58%),
+        radial-gradient(640px 420px at 0% 100%, rgba(6, 28, 34, 0.35), transparent 55%),
+        linear-gradient(165deg, #0c3c40 0%, #0f534f 46%, #123f48 100%);
+      padding: 4.1rem 0 6.2rem;
+      overflow: hidden;
+    }
+
+    .hero :focus-visible { outline-color: var(--cream); }
+
+    .hero-grid {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: minmax(230px, 290px) minmax(0, 1fr);
+      gap: 3.25rem;
+      align-items: center;
+    }
+
+    .identity h1 {
+      margin: 1rem 0 0.4rem;
+      color: var(--cream);
+      font-family: Fraunces, Georgia, serif;
+      font-weight: 560;
+      font-size: clamp(2.7rem, 5vw, 3.9rem);
+      line-height: 0.98;
+      letter-spacing: -0.035em;
+    }
+
+    .position {
+      margin: 0;
+      color: #d7ebe7;
+      font-weight: 600;
+      line-height: 1.45;
+    }
+
+    .location {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      margin: 0.9rem 0 0;
+      color: #d5e6e3;
+      font-size: 0.98rem;
+      font-weight: 600;
+    }
+
+    .icon {
+      width: 16px;
+      height: 16px;
+      flex: 0 0 16px;
+    }
+
+    .avatar {
+      width: 168px;
+      height: 168px;
+      border-radius: 50%;
+      position: relative;
+      display: grid;
+      place-items: center;
+      background:
+        radial-gradient(circle at 32% 28%, #49b8b0 0%, #0f6e6b 46%, #0a3538 80%);
+      box-shadow:
+        0 0 0 5px rgba(246, 243, 236, 0.92),
+        0 18px 40px rgba(0, 0, 0, 0.28);
+    }
+
+    .initials {
+      font-family: Fraunces, Georgia, serif;
+      font-size: 3rem;
+      font-weight: 520;
+      letter-spacing: 0.03em;
+      color: var(--cream);
+      line-height: 1;
+    }
+
+    .avatar img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: inherit;
+    }
+
+    .js .avatar img {
+      opacity: 0;
+      transition: opacity 0.35s ease;
+    }
+
+    .js .avatar img.is-ready { opacity: 1; }
+
+    .profile-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 1.05rem;
+    }
+
+    .profile-links a {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      padding: 0.48rem 0.85rem;
+      border-radius: 999px;
+      border: 1px solid rgba(246, 243, 236, 0.28);
+      background: rgba(255, 255, 255, 0.06);
+      color: var(--cream);
+      text-decoration: none;
+      font-size: 0.95rem;
+      font-weight: 640;
+      transition: background 0.18s ease, border-color 0.18s ease, transform 0.18s ease;
+    }
+
+    .about-copy h2 {
+      margin: 0 0 1rem;
+      color: var(--cream);
+      font-family: Fraunces, Georgia, serif;
+      font-weight: 560;
+      font-size: clamp(1.55rem, 2.4vw, 2.05rem);
+      line-height: 1.2;
+      letter-spacing: -0.03em;
+    }
+
+    .about-copy p {
+      margin: 0 0 1rem;
+      color: var(--hero-text);
+      font-size: 1.06rem;
+      line-height: 1.7;
+    }
+
+    .hero a:not(.profile-links a) {
+      color: #dff7f4;
+      text-decoration-color: rgba(223, 247, 244, 0.45);
+    }
+
+    .notice {
+      margin: 1.35rem 0 0;
+      padding: 1rem 1.15rem;
+      border-radius: 14px;
+      background: rgba(255, 255, 255, 0.07);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-left: 3px solid #e4c9a4;
+      color: #f4faf8;
+      font-weight: 560;
+    }
+
+    .hero-wave {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -1px;
+      height: 64px;
+      z-index: 1;
+    }
+
+    .hero-wave svg { display: block; width: 100%; height: 100%; }
+
+    .section { padding: 3rem 0; scroll-margin-top: 5.2rem; }
+
+    .section-title {
+      margin: 0 0 1.15rem;
+      color: var(--ink);
+      font-family: Fraunces, Georgia, serif;
+      font-weight: 560;
+      font-size: clamp(1.85rem, 3vw, 2.3rem);
+      line-height: 1.15;
+      letter-spacing: -0.03em;
+      text-wrap: balance;
+    }
+
+    .section-title::after {
+      content: "";
+      display: block;
+      width: 2.8rem;
+      height: 3px;
+      margin-top: 0.7rem;
+      border-radius: 999px;
+      background: linear-gradient(90deg, var(--teal), rgba(15, 110, 107, 0));
+    }
+
+    .lead {
+      margin: -0.15rem 0 1.2rem;
+      max-width: 68ch;
+    }
+
+    .interest-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.9rem;
+    }
+
+    .interest-list > li {
+      margin: 0;
+      padding: 1.05rem 1.15rem 1.1rem;
+      background: var(--card);
+      border: 1px solid rgba(18, 60, 62, 0.08);
+      border-radius: 16px;
+      box-shadow: var(--shadow);
+      color: var(--ink);
+      font-weight: 700;
+    }
+
+    .interest-list > li:last-child:nth-child(odd) { grid-column: 1 / -1; }
+
+    .interest-list ul {
+      margin: 0.45rem 0 0;
+      padding-left: 1.15rem;
+      color: var(--text);
+      font-weight: 450;
+    }
+
+    .interest-list ul li { margin: 0.18rem 0; }
+    .interest-list ul li::marker { color: var(--teal); }
+
+    .timeline {
+      position: relative;
+      display: grid;
+      gap: 0.85rem;
+    }
+
+    .timeline::before {
+      content: "";
+      position: absolute;
+      left: calc(4.75rem + 0.72rem);
+      top: 0.55rem;
+      bottom: 0.55rem;
+      width: 1px;
+      background: linear-gradient(var(--teal), rgba(15, 110, 107, 0.05));
+    }
+
+    .timeline-item {
+      position: relative;
+      display: grid;
+      grid-template-columns: 4.75rem minmax(0, 1fr);
+      column-gap: 1.7rem;
+    }
+
+    .timeline-item::before {
+      content: "";
+      position: absolute;
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+      border: 2px solid var(--teal);
+      background: var(--bg);
+      left: calc(4.75rem + 0.72rem - 5px);
+      top: 1.25rem;
+      z-index: 1;
+    }
+
+    .year {
+      padding-top: 1.05rem;
+      color: var(--teal-deep);
+      font-weight: 730;
+      font-variant-numeric: tabular-nums;
+      letter-spacing: 0.01em;
+    }
+
+    .tl-body,
+    .entry,
+    .panel {
+      background: var(--card);
+      border: 1px solid rgba(18, 60, 62, 0.08);
+      border-radius: 16px;
+      box-shadow: var(--shadow);
+    }
+
+    .tl-body { padding: 1rem 1.2rem 1.05rem; }
+
+    .tl-body h3,
+    .panel h2 {
+      margin: 0 0 0.25rem;
+      color: var(--ink);
+      font-family: Fraunces, Georgia, serif;
+      font-weight: 560;
+      font-size: 1.22rem;
+      letter-spacing: -0.02em;
+      line-height: 1.3;
+    }
+
+    .panel h2 { font-size: clamp(1.55rem, 2vw, 1.85rem); }
+
+    .panel h2::after { margin-top: 0.55rem; }
+
+    .institution {
+      margin: 0 0 0.45rem;
+      color: var(--muted);
+      font-weight: 600;
+    }
+
+    .tl-body p { margin: 0.18rem 0; }
+
+    .list {
+      display: grid;
+      gap: 0.85rem;
+      counter-reset: item;
+    }
+
+    .entry {
+      display: grid;
+      grid-template-columns: auto minmax(0, 1fr);
+      column-gap: 0.9rem;
+      row-gap: 0.15rem;
+      padding: 1rem 1.15rem 0.95rem;
+    }
+
+    .entry::before {
+      counter-increment: item;
+      content: counter(item);
+      grid-row: 1 / span 2;
+      align-self: start;
+      width: 1.85rem;
+      height: 1.85rem;
+      margin-top: 0.12rem;
+      display: grid;
+      place-items: center;
+      border-radius: 999px;
+      background: var(--mist);
+      color: var(--teal-deep);
+      font-size: 0.82rem;
+      font-weight: 730;
+    }
+
+    .entry p { margin: 0; }
+    .entry em { color: var(--ink); }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      justify-self: start;
+      margin-top: 0.65rem;
+      padding: 0.18rem 0.62rem;
+      border-radius: 999px;
+      border: 1px solid transparent;
+      font-size: 0.78rem;
+      font-weight: 700;
+      line-height: 1.4;
+    }
+
+    .tag-published { background: #e5f3f1; color: #0b5552; }
+    .tag-submission { background: #f8efe3; color: #6d4a22; }
+    .tag-prep { background: #eef2f3; color: #3d5156; }
+    .tag-poster { background: #e7f2f8; color: #1c4d66; }
+    .tag-oral { background: #e7f5ee; color: #1d5a3a; }
+
+    .pair {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 0.9rem;
+      align-items: stretch;
+    }
+
+    .panel { padding: 1.2rem 1.3rem 1.3rem; }
+
+    .lang-list {
+      list-style: none;
+      margin: 0.35rem 0 0;
+      padding: 0;
+    }
+
+    .lang-list li {
+      padding: 0.68rem 0;
+      border-top: 1px solid var(--line);
+      color: var(--ink);
+      font-weight: 650;
+    }
+
+    .lang-list li:first-child { border-top: 0; padding-top: 0.2rem; }
+
+    .interest-line {
+      margin: 0.45rem 0 0;
+      color: var(--ink);
+      font-family: Fraunces, Georgia, serif;
+      font-weight: 500;
+      font-size: 1.45rem;
+      line-height: 1.35;
+      letter-spacing: -0.02em;
+    }
+
+    .card-hover {
+      transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+    }
+
+    footer {
+      padding: 0.4rem 1rem 2rem;
+      color: var(--muted);
+      text-align: center;
+      font-size: 0.95rem;
+    }
+
+    footer .wrap {
+      padding-top: 1.3rem;
+      border-top: 1px solid var(--line);
+    }
+
+    @media (hover: hover) {
+      .profile-links a:hover {
+        background: rgba(255, 255, 255, 0.14);
+        border-color: rgba(246, 243, 236, 0.55);
+        transform: translateY(-1px);
+        text-decoration: none;
+      }
+
+      .card-hover:hover {
+        transform: translateY(-2px);
+        border-color: rgba(15, 110, 107, 0.28);
+        box-shadow: var(--shadow-hover);
+      }
+    }
+
+    @media (max-width: 980px) {
+      .topbar-inner { flex-wrap: wrap; padding: 0.35rem 0; }
+      .nav-links { flex-wrap: wrap; width: 100%; gap: 0.35rem 1rem; padding-bottom: 0.75rem; }
+
+      .js .nav-toggle { display: inline-flex; }
+
+      .js .nav-links {
+        display: none;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 100%;
+        width: auto;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        padding: 0.4rem 1.25rem 0.85rem;
+        background: rgba(255, 255, 255, 0.98);
+        border-bottom: 1px solid var(--line);
+        box-shadow: 0 16px 30px rgba(16, 46, 48, 0.08);
+      }
+
+      .js .nav-links.is-open { display: flex; }
+
+      .js .nav-links a {
+        padding: 0.72rem 0.1rem;
+        border-bottom: 1px solid rgba(18, 60, 62, 0.06);
+      }
+
+      .js .nav-links a:last-child { border-bottom: 0; }
+    }
+
+    @media (max-width: 800px) {
+      .hero { padding: 2.6rem 0 5.2rem; }
+      .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 1.6rem;
+        justify-items: center;
+      }
+      .identity {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      .about-copy { width: 100%; }
+      .avatar { width: 132px; height: 132px; }
+      .initials { font-size: 2.45rem; }
+      .interest-list,
+      .pair { grid-template-columns: 1fr; }
+      .interest-list > li:last-child:nth-child(odd) { grid-column: auto; }
+    }
+
+    @media (max-width: 640px) {
+      body { font-size: 1rem; }
+      .wrap, .topbar-inner { width: min(var(--max), calc(100% - 1.7rem)); }
+
+      .timeline::before { left: 4px; top: 0.2rem; bottom: 0.2rem; }
+
+      .timeline-item {
+        grid-template-columns: 16px minmax(0, 1fr);
+        column-gap: 0.75rem;
+      }
+
+      .timeline-item::before { left: 0; top: 0.35rem; }
+
+      .year {
+        grid-column: 2;
+        grid-row: 1;
+        padding-top: 0;
+        font-size: 0.95rem;
+      }
+
+      .tl-body { grid-column: 2; grid-row: 2; }
+
+      .entry { padding: 0.9rem 0.9rem 0.85rem; }
+      .section { padding: 2.4rem 0; }
+      .hero-wave { height: 42px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after {
+        animation: none !important;
+        transition: none !important;
+      }
+    }
+
+    @keyframes fade-rise {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: none; }
+    }
+
+    .hero-grid { animation: fade-rise 0.7s ease both; }
+
+    @media print {
+      body { background: white; color: black; }
+      .topbar, .hero-wave, .skip { display: none !important; }
+      .hero {
+        background: white !important;
+        color: #12282d !important;
+        padding: 0 0 1rem;
+      }
+      .hero h1,
+      .hero h2,
+      .about-copy p,
+      .position,
+      .location,
+      .notice,
+      .initials {
+        color: #12282d !important;
+      }
+      .hero a,
+      .profile-links a { color: #0b5552 !important; }
+      .profile-links a {
+        background: white !important;
+        border-color: #b7c9c6 !important;
+      }
+      .notice {
+        background: white !important;
+        border: 1px solid #ccc !important;
+      }
+      .avatar {
+        background: white !important;
+        box-shadow: none !important;
+        border: 1.5px solid #222;
+      }
+      .tl-body, .entry, .panel, .interest-list > li {
+        box-shadow: none !important;
+        break-inside: avoid;
+      }
+      .tag {
+        background: white !important;
+        color: black !important;
+        border-color: #888 !important;
+      }
+      .section { padding: 1rem 0; }
+      h2, h3 { break-after: avoid; }
+      a[href^="http"]::after,
+      a[href^="mailto:"]::after {
+        content: " (" attr(href) ")";
+        font-weight: 400;
+        font-size: 0.86em;
+        overflow-wrap: anywhere;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#about">Skip to content</a>
+
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="#about">
+        <span class="monogram" aria-hidden="true">AL</span>
+        <span class="brand-name">Anqi Liu's Homepage</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">Menu</span>
+        <span class="burger" aria-hidden="true"></span>
+      </button>
+      <nav class="nav-links" id="site-nav" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#education">Education</a>
+        <a href="#publications">Publications</a>
+        <a href="#conferences">Conferences</a>
+        <a href="#languages">Languages</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="about">
+      <div class="wrap hero-grid">
+        <div class="identity">
+          <!--
+            profile.jpg is optional. If the file is missing or fails to load,
+            the AL monogram in this frame stays visible.
+            Add profile.jpg next to index.html to show the portrait.
+          -->
+          <div class="avatar">
+            <span class="initials" aria-hidden="true">AL</span>
+            <img
+              class="profile-photo"
+              src="profile.jpg"
+              alt="Portrait of Anqi Liu"
+              width="168"
+              height="168"
+              onload="photoReady(this)"
+              onerror="photoFailed(this)">
+          </div>
+
+          <h1>Anqi Liu</h1>
+          <p class="position">
+            Postdoctoral Researcher<br>
+            Hydro-climatology Research Lab<br>
+            POSTECH
+          </p>
+          <p class="location">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 21s7-6.2 7-11a7 7 0 1 0-14 0c0 4.8 7 11 7 11z"/>
+              <circle cx="12" cy="10" r="2.2"/>
+            </svg>
+            Pohang, South Korea
+          </p>
+
+          <div class="profile-links">
+            <a href="mailto:liuanqi@postech.ac.kr">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="5" width="18" height="14" rx="2"/>
+                <path d="m4 7 8 6 8-6"/>
+              </svg>
+              Email
+            </a>
+            <a href="https://orcid.org/my-orcid?orcid=0000-0002-6857-0101" target="_blank" rel="noopener noreferrer">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="9"/>
+                <path d="M9 8h4.2a2.4 2.4 0 0 1 0 4.8H9zM9 12.8h4.6"/>
+              </svg>
+              ORCID
+            </a>
+          </div>
+
+          <!--
+            Placeholder profile links (href="#") are hidden so the page does not
+            show dead links. To re-enable, replace "#" with the real URL and
+            move the anchor into .profile-links above.
+
+            <a href="#" target="_blank" rel="noopener">Website</a>
+            <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+
+            GitHub and Google Scholar were already commented out in the original page.
+            Uncomment and add a real URL if they should be shown:
+
+            <a href="#" target="_blank" rel="noopener">GitHub</a>
+            <a href="#" target="_blank" rel="noopener">Google Scholar</a>
+          -->
+        </div>
+
+        <div class="about-copy">
+          <h2>Welcome to Anqi Liu's Homepage!</h2>
+
+          <p>
+            I am currently working as a Postdoctoral Researcher in the
+            <a href="https://www.postech.ac.kr/eng/" target="_blank" rel="noopener noreferrer">
+              Hydro-climatology Research Lab at Pohang University of Science and Technology (POSTECH)
+            </a>,
+            South Korea.
+          </p>
+
+          <p>
+            My research focuses on the impacts of climatic extremes and pandemics on
+            public water-pollution complaints. I use socio-hydrology, natural language
+            processing, machine learning, geospatial analysis, and large-scale
+            environmental data to understand public sentiment, environmental risks,
+            social vulnerability, and environmental justice.
+          </p>
+
+          <div class="notice">
+            My work connects physical environmental conditions with public responses,
+            helping identify emerging risks and disparities that may not be captured by
+            conventional monitoring systems alone.
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-wave" aria-hidden="true">
+        <svg viewBox="0 0 1440 64" preserveAspectRatio="none">
+          <path fill="#f3f6f5" d="M0,36 C180,64 360,8 560,28 C820,54 980,14 1200,30 C1320,38 1380,48 1440,42 L1440,64 L0,64 Z"/>
+        </svg>
+      </div>
+    </section>
+
+    <section class="section" id="research">
+      <div class="wrap">
+        <h2 class="section-title">Research Interests</h2>
+        <p class="lead">
+          My primary research interests lie at the intersection of hydrology,
+          artificial intelligence, public response, and environmental risk:
+        </p>
+
+        <ul class="interest-list">
+          <li class="card-hover">
+            Socio-hydrology
+            <ul>
+              <li>Public responses to water-related environmental risks</li>
+              <li>Social sensing of droughts, floods, and water pollution</li>
+            </ul>
+          </li>
+          <li class="card-hover">
+            Climatic Extremes
+            <ul>
+              <li>Drought and flood impacts</li>
+              <li>Climate–society interactions</li>
+            </ul>
+          </li>
+          <li class="card-hover">
+            Natural Language Processing and Machine Learning
+            <ul>
+              <li>Sentiment and emotion analysis</li>
+              <li>Topic modeling and text classification</li>
+              <li>Environmental complaint and media analysis</li>
+            </ul>
+          </li>
+          <li class="card-hover">Environmental Justice and Social Vulnerability</li>
+          <li class="card-hover">Public Health and Environmental Risk Communication</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="education">
+      <div class="wrap">
+        <h2 class="section-title">Education</h2>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="year">2026</div>
+            <div class="tl-body card-hover">
+              <h3>Ph.D. Candidate, Hydro-climatology Research Lab</h3>
+              <p class="institution">Pohang University of Science and Technology (POSTECH), South Korea</p>
+              <p><strong>Advisor:</strong> Prof. Jonghun Kam</p>
+              <p><strong>Research contents:</strong> <em>Impacts of Climatic Extremes and Pandemic on the Public's Water Pollution Complaints</em></p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="year">2020</div>
+            <div class="tl-body card-hover">
+              <h3>M.Eng. in Environmental Engineering and Project Management</h3>
+              <p class="institution">University of Leeds, United Kingdom</p>
+              <p><strong>Advisor:</strong> Prof. Mark Trigg</p>
+              <p><strong>Research contents:</strong> <em>Impact of Dam Breach Flood</em></p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="year">2019</div>
+            <div class="tl-body card-hover">
+              <h3>B.Eng. in Hydrology and Water Resources Management</h3>
+              <p class="institution">China Three Gorges University, China</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="publications">
+      <div class="wrap">
+        <h2 class="section-title">Publications</h2>
+
+        <div class="list">
+          <article class="entry card-hover">
+            <p>
+              <strong>Liu, A.</strong>, Kwon, S.-Y., Shao, W., &amp; Kam, J. (2023).
+              Monitoring the impact of climate extremes and COVID-19 on statewise
+              sentiment alterations in water pollution complaints.
+              <em>npj Clean Water, 6</em>, 29.
+              <a href="https://doi.org/10.1038/s41545-023-00244-y" target="_blank" rel="noopener noreferrer">DOI</a>
+            </p>
+            <span class="tag tag-published">Published</span>
+          </article>
+
+          <article class="entry card-hover">
+            <p>
+              Choi, S., <strong>Liu, A. (Co-first author)</strong>, Lee, S., Yoon, H.,
+              &amp; Kam, J. (2026). The interplay of news media, social media, and
+              public search behavior during the 2022–2023 South Korea drought.
+              <em>Humanities and Social Sciences Communications</em>.
+              <a href="https://doi.org/10.1057/s41599-025-06398-z" target="_blank" rel="noopener noreferrer">DOI</a>
+            </p>
+            <span class="tag tag-published">Published</span>
+          </article>
+
+          <article class="entry card-hover">
+            <p>
+              <strong>Liu, A.</strong>, &amp; Kam, J. (2026).
+              Assessing the Psychological and Behavioral Impacts of Water-Related
+              Disasters through AI-Based Analysis of Municipal Complaints.
+              <em>Environmental Research Communications</em>.
+              <a href="https://doi.org/10.1088/2515-7620/ae8808" target="_blank" rel="noopener noreferrer">DOI</a>
+            </p>
+            <span class="tag tag-published">Published</span>
+          </article>
+
+          <article class="entry card-hover">
+            <p>
+              Yang, G., Zhang, L., Kam, J., Zheng, Y., Wang, Y., Guo, A., Hussain, A.,
+              <strong>Liu, A.</strong>, &amp; Chang, J. (2025).
+              Harnessing deep learning for dual gains in S2S-scale soil moisture
+              forecasting and flash drought mechanisms.
+              <em>Water Resources Research</em>.
+              <a href="https://doi.org/10.1029/2025WR041466" target="_blank" rel="noopener noreferrer">DOI</a>
+            </p>
+            <span class="tag tag-published">Published</span>
+          </article>
+
+          <article class="entry card-hover">
+            <p>
+              <strong>Liu, A.</strong>, &amp; Shao, W., Kam, J.
+              How did COVID-19 reshape the narratives of the narratives of water complaints?.
+            </p>
+            <span class="tag tag-submission">In submission</span>
+          </article>
+
+          <article class="entry card-hover">
+            <p>
+              <strong>Liu, A.</strong>, &amp; Kam, J.
+              Socio-demographic and regional patterns of suicide in Alabama under
+              severe droughts.
+            </p>
+            <span class="tag tag-prep">In preparation</span>
+          </article>
+
+          <article class="entry card-hover">
+            <p>
+              <strong>Liu, A.</strong>, Shao, W., &amp; Kam, J.
+              Interstate differences in municipal complaints during and after the
+              COVID-19 pandemic.
+            </p>
+            <span class="tag tag-prep">In preparation</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section id="awards">
+      <h2 class="section-title">Honors &amp; Awards</h2>
+
+      <div class="award-row"><div class="year">2025</div><p>Outstanding Presentation Award (Oral), Korean Water Resources Association Conference</p></div>
+      <div class="award-row"><div class="year">2024</div><p>Excellent Graduate Student Award, Brain Korea 21 Program — USD 1,400</p></div>
+      <div class="award-row"><div class="year">2024</div><p>Outstanding Research Challenge Award, 4th POSTECH Excellence Research Achievement Competition — USD 300</p></div>
+      <div class="award-row"><div class="year">2024</div><p>Outstanding Presentation Award (Oral), Korean Water Resources Association Conference</p></div>
+      <div class="award-row"><div class="year">2022</div><p>Excellence Award (Oral), Smart Water Grid International Conference</p></div>
+      <div class="award-row"><div class="year">2022</div><p>Second Place, First Korean Speaking Contest, POSTECH</p></div>
+      <div class="award-row"><div class="year">2019</div><p>Merit-based Tuition Reduction, University of Leeds — GBP 2,000</p></div>
+      <div class="award-row"><div class="year">2019</div><p>Outstanding Graduate Award, China Three Gorges University</p></div>
+      <div class="award-row"><div class="year">2019</div><p>First-Class Scholarship and Outstanding Student Award, China Three Gorges University</p></div>
+      <div class="award-row"><div class="year">2018</div><p>First-Class Scholarship and Outstanding Student Award, China Three Gorges University</p></div>
+    </section> -->
+
+    <section class="section" id="conferences">
+      <div class="wrap">
+        <h2 class="section-title">Selected Conference Presentations</h2>
+
+        <div class="list">
+          <article class="entry card-hover">
+            <p><strong>Liu, A.</strong>, Kwon, S.-Y., Shao, W., &amp; Kam, J. “What Matters When the Public Report Water Pollution Complaints? A Case Study of Alabama (2012–2021).” AGU24, Washington, D.C., December 2024.</p>
+            <span class="tag tag-poster">Poster</span>
+          </article>
+          <article class="entry card-hover">
+            <p>Choi, S., <strong>Liu, A.</strong>, &amp; Kam, J. “Emerging Role of AI in Emotion-Focused Coping for Drought.” AGU24, Washington, D.C., December 2024.</p>
+            <span class="tag tag-poster">Poster</span>
+          </article>
+          <article class="entry card-hover">
+            <p><strong>Liu, A.</strong>, Kwon, S.-Y., Shao, W., &amp; Kam, J. “Monitoring the Impact of Climate Extremes and COVID-19 on the Public’s Sentiment Alteration in Water Pollution Complaints.” AOGS Annual Meeting 2024, Pyeongchang, June 2024.</p>
+            <span class="tag tag-oral">Oral</span>
+          </article>
+          <article class="entry card-hover">
+            <p><strong>Liu, A.</strong>, &amp; Kam, J. “Emotion Shifts Between Multiple Environmental Mediums During Climate and COVID Extremes in Arkansas State.” Korea Water Resources Association Conference, Jeju Island, May 2024.</p>
+            <span class="tag tag-oral">Oral</span>
+          </article>
+          <article class="entry card-hover">
+            <p><strong>Liu, A.</strong>, &amp; Kam, J. “Trend and Sentiment Analysis in Water Complaints: A Case Study of Alabama, U.S.” AGU23, Online, December 2023.</p>
+            <span class="tag tag-poster">Poster</span>
+          </article>
+          <article class="entry card-hover">
+            <p><strong>Liu, A.</strong>, &amp; Kam, J. “Understanding the Aggregate Behavior Pattern of Environmental Complaints from the Lens of Big Data.” AGU21, Online, December 2021.</p>
+            <span class="tag tag-oral">Oral</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!--
+      Technical Skills stayed commented out in the original page and remain hidden.
+      <h3>Technical Skills</h3>
+      <ul>
+        <li>Python</li>
+        <li>Natural Language Processing</li>
+        <li>Machine Learning</li>
+        <li>QGIS</li>
+        <li>HEC-RAS</li>
+        <li>LaTeX</li>
+        <li>Microsoft Office Suite</li>
+      </ul>
+    -->
+
+    <section class="section" id="languages">
+      <div class="wrap">
+        <div class="pair">
+          <article class="panel card-hover">
+            <h2 class="section-title">Languages</h2>
+            <ul class="lang-list">
+              <li>Mandarin — Native</li>
+              <li>English — Fluent</li>
+              <li>Korean — Fluent</li>
+              <li>Japanese — Basic</li>
+            </ul>
+          </article>
+
+          <article class="panel card-hover">
+            <h2 class="section-title">Personal Interests</h2>
+            <p class="interest-line">Calligraphy, badminton, and drawing</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">© 2026 Anqi Liu · Academic Homepage</div>
+  </footer>
+
+  <script>
+    (function () {
+      var header = document.querySelector(".topbar");
+      var toggle = document.querySelector(".nav-toggle");
+      var nav = document.getElementById("site-nav");
+      var links = nav ? Array.prototype.slice.call(nav.querySelectorAll("a")) : [];
+      var sections = links.map(function (a) {
+        return document.querySelector(a.getAttribute("href"));
+      }).filter(Boolean);
+
+      function setMenu(open) {
+        if (!nav || !toggle || !header) return;
+        nav.classList.toggle("is-open", open);
+        header.classList.toggle("menu-open", open);
+        toggle.setAttribute("aria-expanded", open ? "true" : "false");
+      }
+
+      if (toggle) {
+        toggle.addEventListener("click", function () {
+          setMenu(!nav.classList.contains("is-open"));
+        });
+      }
+
+      links.forEach(function (a) {
+        a.addEventListener("click", function () { setMenu(false); });
+      });
+
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape") setMenu(false);
+      });
+
+      document.addEventListener("click", function (e) {
+        if (!nav || !nav.classList.contains("is-open")) return;
+        if (nav.contains(e.target) || (toggle && toggle.contains(e.target))) return;
+        setMenu(false);
+      });
+
+      function setActive() {
+        if (!sections.length) return;
+        var offset = window.scrollY + 130;
+        var current = sections[0];
+        for (var i = 0; i < sections.length; i++) {
+          if (sections[i].offsetTop <= offset) current = sections[i];
+        }
+        var nearBottom = window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2;
+        if (nearBottom) current = sections[sections.length - 1];
+        links.forEach(function (a) {
+          var on = a.getAttribute("href") === "#" + current.id;
+          a.classList.toggle("active", on);
+          if (on) a.setAttribute("aria-current", "true");
+          else a.removeAttribute("aria-current");
+        });
+      }
+
+      window.addEventListener("scroll", setActive, { passive: true });
+      window.addEventListener("resize", setActive);
+      setActive();
+    })();
+  </script>
+</body>
+</html>
