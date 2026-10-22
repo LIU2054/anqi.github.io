@@ -280,12 +280,14 @@
     }
 
     .avatar {
-      width: 168px;
-      height: 168px;
-      border-radius: 50%;
+      width: 200px;
+      aspect-ratio: 390 / 567;
+      height: auto;
+      border-radius: 18px;
       position: relative;
       display: grid;
       place-items: center;
+      overflow: hidden;
       background: #ffffff;
       border: 1px solid var(--line);
       box-shadow: 0 10px 28px rgba(20, 24, 28, 0.06);
@@ -306,7 +308,7 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
-      object-position: center 38%;
+      object-position: center center;
       border-radius: inherit;
     }
 
@@ -633,7 +635,7 @@
         text-align: center;
       }
       .about-copy { width: 100%; }
-      .avatar { width: 132px; height: 132px; }
+      .avatar { width: 168px; height: auto; }
       .initials { font-size: 2.45rem; }
       .interest-list,
       .pair { grid-template-columns: 1fr; }
@@ -819,14 +821,6 @@
             South Korea.
           </p>
 
-          <p>
-            My research focuses on the impacts of climatic extremes and pandemics on
-            public water-pollution complaints. I use socio-hydrology, natural language
-            processing, machine learning, geospatial analysis, and large-scale
-            environmental data to understand public sentiment, environmental risks,
-            social vulnerability, and environmental justice.
-          </p>
-
           <div class="notice">
             My work connects physical environmental conditions with public responses,
             helping identify emerging risks and disparities that may not be captured by
@@ -841,8 +835,11 @@
       <div class="wrap">
         <h2 class="section-title">Research Interests</h2>
         <p class="lead">
-          My primary research interests lie at the intersection of hydrology,
-          artificial intelligence, public response, and environmental risk:
+          My research focuses on the impacts of climatic extremes and pandemics on
+          public water-pollution complaints. I use socio-hydrology, natural language
+          processing, machine learning, geospatial analysis, and large-scale
+          environmental data to understand public sentiment, environmental risks,
+          social vulnerability, and environmental justice.
         </p>
 
         <ul class="interest-list">
@@ -930,18 +927,6 @@
               Disasters through AI-Based Analysis of Municipal Complaints.
               <em>Environmental Research Communications</em>.
               <a href="https://doi.org/10.1088/2515-7620/ae8808" target="_blank" rel="noopener noreferrer">DOI</a>
-            </p>
-            <span class="tag tag-published">Published</span>
-          </article>
-
-          <article class="entry card-hover">
-            <p>
-              Yang, G., Zhang, L., Kam, J., Zheng, Y., Wang, Y., Guo, A., Hussain, A.,
-              <strong>Liu, A.</strong>, &amp; Chang, J. (2025).
-              Harnessing deep learning for dual gains in S2S-scale soil moisture
-              forecasting and flash drought mechanisms.
-              <em>Water Resources Research</em>.
-              <a href="https://doi.org/10.1029/2025WR041466" target="_blank" rel="noopener noreferrer">DOI</a>
             </p>
             <span class="tag tag-published">Published</span>
           </article>
