@@ -241,10 +241,12 @@
       position: relative;
       z-index: 1;
       display: grid;
-      grid-template-columns: minmax(230px, 290px) minmax(0, 1fr);
+      grid-template-columns: minmax(260px, 320px) minmax(0, 1fr);
       gap: 3.25rem;
       align-items: center;
     }
+
+    .identity { min-width: 0; }
 
     .identity h1 {
       margin: 1rem 0 0.4rem;
@@ -280,10 +282,11 @@
     }
 
     .avatar {
-      width: 200px;
-      aspect-ratio: 390 / 567;
+      width: 291px;
+      max-width: 100%;
+      aspect-ratio: 1;
       height: auto;
-      border-radius: 18px;
+      border-radius: 50%;
       position: relative;
       display: grid;
       place-items: center;
@@ -307,7 +310,7 @@
       inset: 0;
       width: 100%;
       height: 100%;
-      object-fit: cover;
+      object-fit: contain;
       object-position: center center;
       border-radius: inherit;
     }
@@ -392,42 +395,33 @@
       background: #e4e4e4;
     }
 
-    .lead {
+    #research .lead {
+      display: block;
+      width: 100%;
+      max-width: none;
       margin: -0.15rem 0 1.2rem;
-      max-width: 68ch;
     }
 
     .interest-list {
       list-style: none;
       margin: 0;
       padding: 0;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 0.9rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.55rem;
     }
 
     .interest-list > li {
       margin: 0;
-      padding: 1.05rem 1.15rem 1.1rem;
-      background: var(--card);
+      padding: 0.38rem 0.85rem;
+      background: #ffffff;
       border: 1px solid var(--line);
-      border-radius: 16px;
-      box-shadow: var(--shadow);
+      border-radius: 999px;
       color: var(--ink);
-      font-weight: 700;
+      font-size: 0.98rem;
+      font-weight: 650;
+      line-height: 1.35;
     }
-
-    .interest-list > li:last-child:nth-child(odd) { grid-column: 1 / -1; }
-
-    .interest-list ul {
-      margin: 0.45rem 0 0;
-      padding-left: 1.15rem;
-      color: var(--text);
-      font-weight: 450;
-    }
-
-    .interest-list ul li { margin: 0.18rem 0; }
-    .interest-list ul li::marker { color: #b5b5b5; }
 
     .edu-list {
       display: grid;
@@ -526,7 +520,7 @@
 
     .pair {
       display: grid;
-      grid-template-columns: 1.15fr 0.85fr;
+      grid-template-columns: 1fr 1fr;
       gap: 0.9rem;
       align-items: stretch;
     }
@@ -536,12 +530,15 @@
     #languages.section { padding: 1.1rem 0 1.75rem; }
 
     #languages .pair {
-      grid-template-columns: 1.1fr 0.9fr;
+      grid-template-columns: 1fr 1fr;
       gap: 0.7rem;
-      align-items: start;
+      align-items: stretch;
     }
 
-    #languages .panel { padding: 0.8rem 1rem 0.85rem; }
+    #languages .panel {
+      height: 100%;
+      padding: 0.8rem 1rem 0.85rem;
+    }
 
     #languages .section-title {
       margin: 0 0 0.35rem;
@@ -661,12 +658,10 @@
         text-align: center;
       }
       .about-copy { width: 100%; }
-      .avatar { width: 168px; height: auto; }
+      .avatar { width: 244px; max-width: 100%; height: auto; }
       .initials { font-size: 2.45rem; }
-      .interest-list,
       .pair,
       #languages .pair { grid-template-columns: 1fr; }
-      .interest-list > li:last-child:nth-child(odd) { grid-column: auto; }
     }
 
     @media (max-width: 640px) {
@@ -784,8 +779,8 @@
               class="profile-photo"
               src="profile.jpg"
               alt="Portrait of Anqi Liu"
-              width="168"
-              height="168"
+              width="390"
+              height="567"
               onload="photoReady(this)"
               onerror="photoFailed(this)">
           </div>
@@ -870,29 +865,10 @@
         </p>
 
         <ul class="interest-list">
-          <li class="card-hover">
-            Socio-hydrology
-            <ul>
-              <li>Public responses to water-related environmental risks</li>
-              <li>Social sensing of droughts, floods, and water pollution</li>
-            </ul>
-          </li>
-          <li class="card-hover">
-            Climatic Extremes
-            <ul>
-              <li>Drought and flood impacts</li>
-              <li>Climate–society interactions</li>
-            </ul>
-          </li>
-          <li class="card-hover">
-            Natural Language Processing and Machine Learning
-            <ul>
-              <li>Sentiment and emotion analysis</li>
-              <li>Topic modeling and text classification</li>
-              <li>Environmental complaint and media analysis</li>
-            </ul>
-          </li>
-          <li class="card-hover">Public Health and Environmental Risk Communication</li>
+          <li>Socio-hydrology</li>
+          <li>Climatic Extremes</li>
+          <li>Natural Language Processing and Machine Learning</li>
+          <li>Public Health and Environmental Risk Communication</li>
         </ul>
       </div>
     </section>
