@@ -427,48 +427,9 @@
     .interest-list ul li { margin: 0.18rem 0; }
     .interest-list ul li::marker { color: #b5b5b5; }
 
-    .timeline {
-      position: relative;
+    .edu-list {
       display: grid;
       gap: 0.85rem;
-    }
-
-    .timeline::before {
-      content: "";
-      position: absolute;
-      left: calc(4.75rem + 0.72rem);
-      top: 0.55rem;
-      bottom: 0.55rem;
-      width: 1px;
-      background: #e5e5e5;
-    }
-
-    .timeline-item {
-      position: relative;
-      display: grid;
-      grid-template-columns: 4.75rem minmax(0, 1fr);
-      column-gap: 1.7rem;
-    }
-
-    .timeline-item::before {
-      content: "";
-      position: absolute;
-      width: 11px;
-      height: 11px;
-      border-radius: 50%;
-      border: 2px solid var(--teal);
-      background: var(--bg);
-      left: calc(4.75rem + 0.72rem - 5px);
-      top: 1.25rem;
-      z-index: 1;
-    }
-
-    .year {
-      padding-top: 1.05rem;
-      color: var(--muted);
-      font-weight: 730;
-      font-variant-numeric: tabular-nums;
-      letter-spacing: 0.01em;
     }
 
     .tl-body,
@@ -498,7 +459,7 @@
     .panel h2::after { margin-top: 0.55rem; }
 
     .institution {
-      margin: 0 0 0.45rem;
+      margin: 0.2rem 0 0;
       color: var(--muted);
       font-weight: 600;
     }
@@ -682,24 +643,6 @@
     @media (max-width: 640px) {
       body { font-size: 1rem; }
       .wrap, .topbar-inner { width: min(var(--max), calc(100% - 1.7rem)); }
-
-      .timeline::before { left: 4px; top: 0.2rem; bottom: 0.2rem; }
-
-      .timeline-item {
-        grid-template-columns: 16px minmax(0, 1fr);
-        column-gap: 0.75rem;
-      }
-
-      .timeline-item::before { left: 0; top: 0.35rem; }
-
-      .year {
-        grid-column: 2;
-        grid-row: 1;
-        padding-top: 0;
-        font-size: 0.95rem;
-      }
-
-      .tl-body { grid-column: 2; grid-row: 2; }
 
       .entry { padding: 0.9rem 0.9rem 0.85rem; }
       .section { padding: 2.4rem 0; }
@@ -934,34 +877,21 @@
       <div class="wrap">
         <h2 class="section-title">Education</h2>
 
-        <div class="timeline">
-          <div class="timeline-item">
-            <div class="year">2026</div>
-            <div class="tl-body card-hover">
-              <h3>Ph.D., Hydro-climatology Research Lab</h3>
-              <p class="institution">Pohang University of Science and Technology (POSTECH), South Korea</p>
-              <p><strong>Advisor:</strong> Prof. Jonghun Kam</p>
-              <p><strong>Research contents:</strong> <em>Impacts of Climatic Extremes and Pandemic on the Public's Water Pollution Complaints</em></p>
-            </div>
-          </div>
+        <div class="edu-list">
+          <article class="tl-body card-hover">
+            <h3>Ph.D., Hydro-climatology Research Lab</h3>
+            <p class="institution">Pohang University of Science and Technology (POSTECH), South Korea</p>
+          </article>
 
-          <div class="timeline-item">
-            <div class="year">2020</div>
-            <div class="tl-body card-hover">
-              <h3>M.Eng. in Environmental Engineering and Project Management</h3>
-              <p class="institution">University of Leeds, United Kingdom</p>
-              <p><strong>Advisor:</strong> Prof. Mark Trigg</p>
-              <p><strong>Research contents:</strong> <em>Impact of Dam Breach Flood</em></p>
-            </div>
-          </div>
+          <article class="tl-body card-hover">
+            <h3>M.Eng. in Environmental Engineering and Project Management</h3>
+            <p class="institution">University of Leeds, United Kingdom</p>
+          </article>
 
-          <div class="timeline-item">
-            <div class="year">2019</div>
-            <div class="tl-body card-hover">
-              <h3>B.Eng. in Hydrology and Water Resources Management</h3>
-              <p class="institution">China Three Gorges University, China</p>
-            </div>
-          </div>
+          <article class="tl-body card-hover">
+            <h3>B.Eng. in Hydrology and Water Resources Management</h3>
+            <p class="institution">China Three Gorges University, China</p>
+          </article>
         </div>
       </div>
     </section>
