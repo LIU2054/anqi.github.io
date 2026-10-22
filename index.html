@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Academic homepage of Anqi Liu, Postdoctoral Researcher in the Hydro-climatology Research Lab at POSTECH.">
   <meta name="author" content="Anqi Liu">
-  <meta name="theme-color" content="#0f6e6b">
+  <meta name="theme-color" content="#ffffff">
   <meta property="og:title" content="Anqi Liu | Academic Homepage">
   <meta property="og:description" content="Postdoctoral Researcher in the Hydro-climatology Research Lab at POSTECH.">
   <meta property="og:type" content="profile">
@@ -30,19 +30,16 @@
   </script>
   <style>
     :root {
-      --bg: #f3f6f5;
-      --ink: #12282d;
-      --text: #2c4146;
-      --muted: #4e6469;
+      --bg: #ffffff;
+      --ink: #142226;
+      --text: #243033;
+      --muted: #5c686c;
       --teal: #0f6e6b;
       --teal-deep: #0b5552;
-      --line: #d5e3e0;
-      --mist: #e5f3f1;
+      --line: #e6e6e6;
       --card: #ffffff;
-      --cream: #f6f3ec;
-      --hero-text: #e7f2f0;
-      --shadow: 0 10px 28px rgba(16, 46, 48, 0.05);
-      --shadow-hover: 0 16px 36px rgba(16, 46, 48, 0.09);
+      --shadow: 0 8px 24px rgba(20, 24, 28, 0.05);
+      --shadow-hover: 0 14px 32px rgba(20, 24, 28, 0.08);
       --max: 1080px;
       --nav-h: 4.4rem;
     }
@@ -54,17 +51,14 @@
     body {
       margin: 0;
       color: var(--text);
-      background:
-        radial-gradient(980px 420px at 110% -80px, rgba(15, 110, 107, 0.09), transparent 58%),
-        radial-gradient(720px 360px at -12% 108%, rgba(15, 110, 107, 0.07), transparent 52%),
-        var(--bg);
+      background: #ffffff;
       font-family: "Source Sans 3", "Segoe UI", sans-serif;
       font-size: 1.0625rem;
       line-height: 1.65;
       font-weight: 430;
     }
 
-    ::selection { background: #b7e4df; color: #0c2c2e; }
+    ::selection { background: #e8e8e8; color: #142226; }
 
     img { max-width: 100%; }
 
@@ -119,10 +113,9 @@
       position: sticky;
       top: 0;
       z-index: 100;
-      background: rgba(243, 246, 245, 0.86);
-      backdrop-filter: blur(16px) saturate(1.3);
-      border-bottom: 1px solid rgba(15, 110, 107, 0.12);
-      box-shadow: inset 0 3px 0 var(--teal);
+      background: rgba(255, 255, 255, 0.94);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--line);
     }
 
     .topbar-inner {
@@ -145,7 +138,7 @@
       letter-spacing: -0.02em;
     }
 
-    .brand:hover { text-decoration: none; color: var(--teal-deep); }
+    .brand:hover { text-decoration: none; color: var(--ink); }
 
     .brand-name { font-size: 1.02rem; }
 
@@ -155,8 +148,9 @@
       display: grid;
       place-items: center;
       border-radius: 50%;
-      background: linear-gradient(160deg, #17867f, #0b5552);
-      color: var(--cream);
+      background: #ffffff;
+      color: var(--ink);
+      border: 1px solid var(--line);
       font-family: Fraunces, Georgia, serif;
       font-size: 0.92rem;
       font-weight: 560;
@@ -232,23 +226,16 @@
       transition: transform 0.22s ease;
     }
 
-    .nav-links a:hover { color: var(--teal-deep); text-decoration: none; }
-    .nav-links a:hover::after,
-    .nav-links a.active::after { transform: scaleX(1); }
+    .nav-links a:hover { color: var(--ink); text-decoration: none; }
     .nav-links a.active { color: var(--teal-deep); }
+    .nav-links a.active::after { transform: scaleX(1); }
 
     .hero {
       position: relative;
-      color: var(--hero-text);
-      background:
-        radial-gradient(820px 380px at 92% 0%, rgba(86, 196, 186, 0.28), transparent 58%),
-        radial-gradient(640px 420px at 0% 100%, rgba(6, 28, 34, 0.35), transparent 55%),
-        linear-gradient(165deg, #0c3c40 0%, #0f534f 46%, #123f48 100%);
-      padding: 4.1rem 0 6.2rem;
-      overflow: hidden;
+      color: var(--text);
+      background: #ffffff;
+      padding: 3.4rem 0 2.2rem;
     }
-
-    .hero :focus-visible { outline-color: var(--cream); }
 
     .hero-grid {
       position: relative;
@@ -261,7 +248,7 @@
 
     .identity h1 {
       margin: 1rem 0 0.4rem;
-      color: var(--cream);
+      color: var(--ink);
       font-family: Fraunces, Georgia, serif;
       font-weight: 560;
       font-size: clamp(2.7rem, 5vw, 3.9rem);
@@ -271,7 +258,7 @@
 
     .position {
       margin: 0;
-      color: #d7ebe7;
+      color: var(--text);
       font-weight: 600;
       line-height: 1.45;
     }
@@ -281,7 +268,7 @@
       align-items: center;
       gap: 0.4rem;
       margin: 0.9rem 0 0;
-      color: #d5e6e3;
+      color: var(--muted);
       font-size: 0.98rem;
       font-weight: 600;
     }
@@ -299,11 +286,9 @@
       position: relative;
       display: grid;
       place-items: center;
-      background:
-        radial-gradient(circle at 32% 28%, #49b8b0 0%, #0f6e6b 46%, #0a3538 80%);
-      box-shadow:
-        0 0 0 5px rgba(246, 243, 236, 0.92),
-        0 18px 40px rgba(0, 0, 0, 0.28);
+      background: #ffffff;
+      border: 1px solid var(--line);
+      box-shadow: 0 10px 28px rgba(20, 24, 28, 0.06);
     }
 
     .initials {
@@ -311,7 +296,7 @@
       font-size: 3rem;
       font-weight: 520;
       letter-spacing: 0.03em;
-      color: var(--cream);
+      color: var(--ink);
       line-height: 1;
     }
 
@@ -344,9 +329,9 @@
       gap: 0.45rem;
       padding: 0.48rem 0.85rem;
       border-radius: 999px;
-      border: 1px solid rgba(246, 243, 236, 0.28);
-      background: rgba(255, 255, 255, 0.06);
-      color: var(--cream);
+      border: 1px solid var(--line);
+      background: #ffffff;
+      color: var(--teal-deep);
       text-decoration: none;
       font-size: 0.95rem;
       font-weight: 640;
@@ -355,7 +340,7 @@
 
     .about-copy h2 {
       margin: 0 0 1rem;
-      color: var(--cream);
+      color: var(--ink);
       font-family: Fraunces, Georgia, serif;
       font-weight: 560;
       font-size: clamp(1.55rem, 2.4vw, 2.05rem);
@@ -365,37 +350,21 @@
 
     .about-copy p {
       margin: 0 0 1rem;
-      color: var(--hero-text);
+      color: var(--text);
       font-size: 1.06rem;
       line-height: 1.7;
-    }
-
-    .hero a:not(.profile-links a) {
-      color: #dff7f4;
-      text-decoration-color: rgba(223, 247, 244, 0.45);
     }
 
     .notice {
       margin: 1.35rem 0 0;
       padding: 1rem 1.15rem;
       border-radius: 14px;
-      background: rgba(255, 255, 255, 0.07);
-      border: 1px solid rgba(255, 255, 255, 0.12);
-      border-left: 3px solid #e4c9a4;
-      color: #f4faf8;
+      background: #ffffff;
+      border: 1px solid var(--line);
+      color: var(--text);
       font-weight: 560;
+      box-shadow: var(--shadow);
     }
-
-    .hero-wave {
-      position: absolute;
-      left: 0;
-      right: 0;
-      bottom: -1px;
-      height: 64px;
-      z-index: 1;
-    }
-
-    .hero-wave svg { display: block; width: 100%; height: 100%; }
 
     .section { padding: 3rem 0; }
 
@@ -417,7 +386,7 @@
       height: 3px;
       margin-top: 0.7rem;
       border-radius: 999px;
-      background: linear-gradient(90deg, var(--teal), rgba(15, 110, 107, 0));
+      background: #e4e4e4;
     }
 
     .lead {
@@ -438,7 +407,7 @@
       margin: 0;
       padding: 1.05rem 1.15rem 1.1rem;
       background: var(--card);
-      border: 1px solid rgba(18, 60, 62, 0.08);
+      border: 1px solid var(--line);
       border-radius: 16px;
       box-shadow: var(--shadow);
       color: var(--ink);
@@ -455,7 +424,7 @@
     }
 
     .interest-list ul li { margin: 0.18rem 0; }
-    .interest-list ul li::marker { color: var(--teal); }
+    .interest-list ul li::marker { color: #b5b5b5; }
 
     .timeline {
       position: relative;
@@ -470,7 +439,7 @@
       top: 0.55rem;
       bottom: 0.55rem;
       width: 1px;
-      background: linear-gradient(var(--teal), rgba(15, 110, 107, 0.05));
+      background: #e5e5e5;
     }
 
     .timeline-item {
@@ -495,7 +464,7 @@
 
     .year {
       padding-top: 1.05rem;
-      color: var(--teal-deep);
+      color: var(--muted);
       font-weight: 730;
       font-variant-numeric: tabular-nums;
       letter-spacing: 0.01em;
@@ -505,7 +474,7 @@
     .entry,
     .panel {
       background: var(--card);
-      border: 1px solid rgba(18, 60, 62, 0.08);
+      border: 1px solid var(--line);
       border-radius: 16px;
       box-shadow: var(--shadow);
     }
@@ -560,8 +529,8 @@
       display: grid;
       place-items: center;
       border-radius: 999px;
-      background: var(--mist);
-      color: var(--teal-deep);
+      background: #f5f5f5;
+      color: var(--ink);
       font-size: 0.82rem;
       font-weight: 730;
     }
@@ -582,11 +551,14 @@
       line-height: 1.4;
     }
 
-    .tag-published { background: #e5f3f1; color: #0b5552; }
-    .tag-submission { background: #f8efe3; color: #6d4a22; }
-    .tag-prep { background: #eef2f3; color: #3d5156; }
-    .tag-poster { background: #e7f2f8; color: #1c4d66; }
-    .tag-oral { background: #e7f5ee; color: #1d5a3a; }
+    .tag-published,
+    .tag-submission,
+    .tag-prep,
+    .tag-poster,
+    .tag-oral {
+      background: #f3faf9;
+      color: var(--teal-deep);
+    }
 
     .pair {
       display: grid;
@@ -640,15 +612,15 @@
 
     @media (hover: hover) {
       .profile-links a:hover {
-        background: rgba(255, 255, 255, 0.14);
-        border-color: rgba(246, 243, 236, 0.55);
+        background: #ffffff;
+        border-color: #d0d0d0;
         transform: translateY(-1px);
         text-decoration: none;
       }
 
       .card-hover:hover {
         transform: translateY(-2px);
-        border-color: rgba(15, 110, 107, 0.28);
+        border-color: #dcdcdc;
         box-shadow: var(--shadow-hover);
       }
     }
@@ -670,7 +642,7 @@
         align-items: stretch;
         gap: 0;
         padding: 0.4rem 1.25rem 0.85rem;
-        background: rgba(255, 255, 255, 0.98);
+        background: #ffffff;
         border-bottom: 1px solid var(--line);
         box-shadow: 0 16px 30px rgba(16, 46, 48, 0.08);
       }
@@ -679,14 +651,14 @@
 
       .js .nav-links a {
         padding: 0.72rem 0.1rem;
-        border-bottom: 1px solid rgba(18, 60, 62, 0.06);
+        border-bottom: 1px solid var(--line);
       }
 
       .js .nav-links a:last-child { border-bottom: 0; }
     }
 
     @media (max-width: 800px) {
-      .hero { padding: 2.6rem 0 5.2rem; }
+      .hero { padding: 2.4rem 0 1.4rem; }
       .hero-grid {
         grid-template-columns: 1fr;
         gap: 1.6rem;
@@ -730,7 +702,6 @@
 
       .entry { padding: 0.9rem 0.9rem 0.85rem; }
       .section { padding: 2.4rem 0; }
-      .hero-wave { height: 42px; }
     }
 
     @media (prefers-reduced-motion: reduce) {
@@ -750,7 +721,7 @@
 
     @media print {
       body { background: white; color: black; }
-      .topbar, .hero-wave, .skip { display: none !important; }
+      .topbar, .skip { display: none !important; }
       .hero {
         background: white !important;
         color: #12282d !important;
@@ -920,11 +891,6 @@
         </div>
       </div>
 
-      <div class="hero-wave" aria-hidden="true">
-        <svg viewBox="0 0 1440 64" preserveAspectRatio="none">
-          <path fill="#f3f6f5" d="M0,36 C180,64 360,8 560,28 C820,54 980,14 1200,30 C1320,38 1380,48 1440,42 L1440,64 L0,64 Z"/>
-        </svg>
-      </div>
     </section>
 
     <section class="section" id="research">
